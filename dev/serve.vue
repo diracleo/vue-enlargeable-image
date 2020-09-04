@@ -1,11 +1,11 @@
 <script>
 import Vue from 'vue';
-import VueEnlargeableImage from '@/vue-enlargeable-image.vue';
+import EnlargeableImage from '@/enlargeable-image.vue';
 
 export default Vue.extend({
   name: 'ServeDev',
   components: {
-    VueEnlargeableImage
+    EnlargeableImage
   }
 });
 </script>
@@ -14,43 +14,19 @@ export default Vue.extend({
   <div id="app">
     <div class="test-container">
       <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
+        <enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=1920" />
       </div>
       <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
+        <enlargeable-image src="https://unsplash.com/photos/V2Niixk8zwk/download?force=true&w=640" src_large="https://unsplash.com/photos/V2Niixk8zwk/download?force=true&w=1920" />
       </div>
       <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
+        <enlargeable-image src="https://unsplash.com/photos/I2kPNnuESak/download?force=true&w=640" src_large="https://unsplash.com/photos/I2kPNnuESak/download?force=true&w=1920" />
       </div>
       <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
+        <enlargeable-image src="https://unsplash.com/photos/J2Odcc17bSc/download?force=true&w=640" src_large="https://unsplash.com/photos/J2Odcc17bSc/download?force=true&w=1920" />
       </div>
       <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
-      </div>
-      <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
-      </div>
-      <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
-      </div>
-      <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
-      </div>
-      <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
-      </div>
-      <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
-      </div>
-      <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
-      </div>
-      <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
-      </div>
-      <div>
-        <vue-enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=2400" />
+        <enlargeable-image src="https://unsplash.com/photos/2Px6-jGGH_w/download?force=true&w=640" src_large="https://unsplash.com/photos/2Px6-jGGH_w/download?force=true&w=1920" />
       </div>
     </div>
   </div>
