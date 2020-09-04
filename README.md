@@ -2,6 +2,9 @@
 
 A Vue component that acts as a wrapper around any other component to allow that component to be the clicked to show a fullscreen image using a smooth animation.
 
+![](https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/vue-enlargeable-image.gif)
+
+
 ## Requirements
 
 - [Vue.js](https://github.com/vuejs/vue)
@@ -13,6 +16,14 @@ A Vue component that acts as a wrapper around any other component to allow that 
 ```bash
 
 $ npm install @diracleo/vue-enlargeable-image
+
+```
+
+### external script
+
+```html
+
+<script src="https://unpkg.com/@diracleo/vue-enlargeable-image/dist/vue-enlargeable-image.min.js"></script>
 
 ```
 
@@ -73,8 +84,6 @@ template:
 
 
 ## Styling the component
-
-You can use CSS to override the default styles:
 
 ```CSS
 
