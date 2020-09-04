@@ -1,5 +1,5 @@
 // Import vue component
-import component from '@/vue-enlargeable-image.vue';
+import component from '@/enlargeable-image.vue';
 
 // install function executed by Vue.use()
 const install = function installVueEnlargeableImage(Vue) {

@@ -13,20 +13,61 @@ export default Vue.extend({
 <template>
   <div id="app">
     <div class="test-container">
-      <div>
-        <enlargeable-image src="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=640" src_large="https://unsplash.com/photos/e3PoGwCFQnM/download?force=true&w=1920" />
+      <h2>Photo Portfolio</h2>
+      <div class="portfolio">
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_large.jpg">
+            <img src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg" />
+          </enlargeable-image>
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg">
+            <img src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" />
+          </enlargeable-image>
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg">
+            <img src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" />
+          </enlargeable-image>
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo4_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo4_large.jpg">
+            <img src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo4_small.jpg" />
+          </enlargeable-image>
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg">
+            <img src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" />
+          </enlargeable-image>
+        </div>
       </div>
-      <div>
-        <enlargeable-image src="https://unsplash.com/photos/V2Niixk8zwk/download?force=true&w=640" src_large="https://unsplash.com/photos/V2Niixk8zwk/download?force=true&w=1920" />
-      </div>
-      <div>
-        <enlargeable-image src="https://unsplash.com/photos/I2kPNnuESak/download?force=true&w=640" src_large="https://unsplash.com/photos/I2kPNnuESak/download?force=true&w=1920" />
-      </div>
-      <div>
-        <enlargeable-image src="https://unsplash.com/photos/J2Odcc17bSc/download?force=true&w=640" src_large="https://unsplash.com/photos/J2Odcc17bSc/download?force=true&w=1920" />
-      </div>
-      <div>
-        <enlargeable-image src="https://unsplash.com/photos/2Px6-jGGH_w/download?force=true&w=640" src_large="https://unsplash.com/photos/2Px6-jGGH_w/download?force=true&w=1920" />
+      <h2>Text Links</h2>
+      <div class="portfolio">
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_large.jpg">
+            <span>Mouse</span>
+          </enlargeable-image>
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg">
+            <span>View</span>
+          </enlargeable-image>
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg">
+            <span>Upside-Down</span>
+          </enlargeable-image>
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo4_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo4_large.jpg">
+            <span>Pathway</span>
+          </enlargeable-image>
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg">
+            <span>Rackets</span>
+          </enlargeable-image>
+        </div>
       </div>
     </div>
   </div>
@@ -34,13 +75,22 @@ export default Vue.extend({
 
 <style scoped>
 .test-container {
+  font-family:Arial;
+}
+.test-container h2 {
+  text-align:center;
+}
+.test-container .portfolio {
   display:flex;
   justify-content:center;
   align-items:center;
   flex-wrap:wrap;
 }
-.test-container > div {
-  width:200px;
+.test-container .portfolio > div {
+  max-width:200px;
   margin:30px;
+}
+.test-container .portfolio > div .enlargeable-image-slot > img {
+  max-width:100%;
 }
 </style>

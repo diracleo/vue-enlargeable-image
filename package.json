@@ -1,6 +1,6 @@
 {
   "name": "@diracleo/vue-enlargeable-image",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/vue-enlargeable-image.ssr.js",
   "browser": "dist/vue-enlargeable-image.esm.js",
   "module": "dist/vue-enlargeable-image.esm.js",
@@ -45,10 +45,10 @@
     "url": "git+https://github.com/diracleo/vue-enlargeable-image.git"
   },
   "author": "Dane Iracleous",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/diracleo/vue-enlargeable-image/issues"
   },
   "homepage": "https://github.com/diracleo/vue-enlargeable-image#readme",
-  "description": ""
+  "description": "A Vue component that acts as a wrapper around any other component to allow that component to be the clicked to show a fullscreen image using a smooth animation."
 }

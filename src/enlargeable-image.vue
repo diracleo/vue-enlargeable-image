@@ -8,6 +8,10 @@ export default {
     src_large: {
       type: String
     },
+    animation_duration: {
+      type: String,
+      default: "700"
+    },
   },
   data() {
     return {
@@ -22,35 +26,44 @@ export default {
       self.updating = false;
       self.enlarging = false;
       self.enlarged = false;
-      self.styles = {};
+      var transition_seconds = parseInt(self.$props.animation_duration) / 1000;
+      transition_seconds = transition_seconds.toFixed(2);
+      self.transition_value = "width "+transition_seconds+"s, height "+transition_seconds+"s, top "+transition_seconds+"s, left "+transition_seconds+"s, background-color "+transition_seconds+"s";
+      self.styles = {
+        transition: self.transition_value
+      };
     },
-    enlarge(event) {
+    enlarge() {
       var self = this;
       if(!self.updating) {
         self.updating = true;
         var img = self.$refs.img;
         var rect = img.getBoundingClientRect();
         self.styles = {
-          position: "absolute",
-          left: Math.round(rect.left)+"px",
-          top: Math.round(rect.top)+"px",
+          position: "fixed",
+          left: Math.ceil(rect.left)+"px",
+          top: Math.floor(rect.top)+"px",
           width: Math.floor(rect.right - rect.left)+"px",
           height: Math.floor(rect.bottom - rect.top)+"px",
           backgroundImage: "url("+self.$props.src+")",
+          transition: self.transition_value
         };
         self.enlarging = true;
         setTimeout(function() {
+          self.$emit('enlarging');
           self.styles = {
             backgroundImage: "url("+self.$props.src+")",
+            transition: self.transition_value
           };
           setTimeout(function() {
             self.enlarged = true;
             self.updating = false;
-          }, 1400);
-        }, 0);
+            self.$emit('enlarged');
+          }, self.$props.animation_duration);
+        }, 100);
       }
     },
-    reset(event) {
+    reset() {
       var self = this;
       if(!self.updating) {
         self.updating = true;
@@ -58,20 +71,23 @@ export default {
         var rect = img.getBoundingClientRect();
         self.enlarging = true;
         setTimeout(function() {
+          self.$emit('delarging');
           self.enlarged = false;
           self.styles = {
             backgroundImage: "url("+self.$props.src+")",
             position: "fixed",
-            left: Math.round(rect.left)+"px",
-            top: Math.round(rect.top)+"px",
+            left: Math.ceil(rect.left)+"px",
+            top: Math.floor(rect.top)+"px",
             width: Math.floor(rect.right - rect.left)+"px",
             height: Math.floor(rect.bottom - rect.top)+"px",
+            transition: self.transition_value
           };
           setTimeout(function() {
             self.enlarged = false;
             self.enlarging = false;
             self.updating = false;
-          }, 1400);
+            self.$emit('delarged');
+          }, self.$props.animation_duration);
         }, 0);
       }
     }
@@ -85,8 +101,10 @@ export default {
 
 <template>
   <div class="enlargeable-image">
-    <img :src="this.$props.src" @click="enlarge($event)" ref="img" v-bind:class="{ active: enlarging }" />
-    <div v-if="enlarging" @click="reset($event)" class="enlargeable-image-full" v-bind:style="styles" v-bind:class="{ enlarging: enlarging, enlarged: enlarged }">
+    <div v-bind:class="{ 'enlargeable-image-slot': true, active: enlarging }" ref="img" @click="enlarge">
+      <slot />
+    </div>
+    <div @click="reset" class="enlargeable-image-full" v-bind:style="styles" v-bind:class="{ enlarging: enlarging, enlarged: enlarged }">
       <img v-if="!enlarged" :src="this.$props.src" />
       <img v-if="enlarged" :src="this.$props.src_large" />
     </div>
@@ -94,25 +112,28 @@ export default {
 </template>
 
 <style scoped>
-.enlargeable-image > img {
+.enlargeable-image .enlargeable-image-slot {
+  display:inline-block;
+}
+.enlargeable-image > div:first-child {
   max-width:100%;
   max-height:100%;
   cursor:zoom-in;
 }
-.enlargeable-image > img.active {
+.enlargeable-image > div:first-child.active {
   opacity:0.3;
   filter:grayscale(100%);
 }
 .enlargeable-image .enlargeable-image-full {
   cursor:zoom-out;
   background-color:transparent;
-  display:flex;
   align-items:center;
   justify-content:center;
   background-position: center center;
   background-repeat:no-repeat;
   background-size:contain;
-  transition: all 1.4s;
+  z-index:2000;
+  display:none;
 }
 .enlargeable-image .enlargeable-image-full > img {
   object-fit:contain;
@@ -120,11 +141,15 @@ export default {
   height:100%;
 }
 .enlargeable-image .enlargeable-image-full.enlarging {
+  display:flex;
   position:fixed;
   left:0px;
   top:0px;
   width:100%;
   height:100%;
   background-color:transparent;
+}
+.enlargeable-image .enlargeable-image-full.enlarged {
+  display:flex;
 }
 </style>
