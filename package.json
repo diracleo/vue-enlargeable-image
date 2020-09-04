@@ -1,0 +1,54 @@
+{
+  "name": "@diracleo/vue-enlargeable-image",
+  "version": "1.0.0",
+  "main": "dist/vue-enlargeable-image.ssr.js",
+  "browser": "dist/vue-enlargeable-image.esm.js",
+  "module": "dist/vue-enlargeable-image.esm.js",
+  "unpkg": "dist/vue-enlargeable-image.min.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve dev/serve.js",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-alias": "^2.2.0",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-replace": "^2.3.2",
+    "@vue/cli-plugin-babel": "^4.3.1",
+    "@vue/cli-service": "^4.3.1",
+    "cross-env": "^7.0.2",
+    "minimist": "^1.2.5",
+    "rollup": "^2.7.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-vue": "^5.1.6",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diracleo/vue-enlargeable-image.git"
+  },
+  "author": "Dane Iracleous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diracleo/vue-enlargeable-image/issues"
+  },
+  "homepage": "https://github.com/diracleo/vue-enlargeable-image#readme",
+  "description": ""
+}
