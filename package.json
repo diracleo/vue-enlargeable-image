@@ -51,5 +51,5 @@
     "url": "https://github.com/diracleo/vue-enlargeable-image/issues"
   },
   "homepage": "https://github.com/diracleo/vue-enlargeable-image#readme",
-  "description": "A Vue component that acts as a wrapper around any other component to allow that component to be the clicked to show a fullscreen image using a smooth animation."
+  "description": "A Vue component that, when clicked, will enlarge an image from thumbnail to full version using a smooth animation."
 }
