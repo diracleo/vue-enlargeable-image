@@ -6,12 +6,12 @@ A Vue component that, when clicked, will enlarge an image from thumbnail to full
 
 ## Features
 
-  * Specify both a thumbnail source and a full version source
-  * Thumbnail version will load immediately behind the scenes
-  * Full version will load upon enlargement and transformed seamlessly from the thumbnail version
+  * Specify both a thumbnail source and a full size source
+  * Thumbnail version will load immediately
+  * Full version will load upon enlargement and is transformed seamlessly from the thumbnail version
   * Specify the duration of the animation
   * Nest any component or HTML element within - doesn't have to be just an img element (keep reading to learn more)
-  * The out-of-box aesthetic is pretty good, but you have the ability to style the componenet however you want with your own CSS class definitions (keep reading to learn more)
+  * Style the component however you want with your own CSS class definitions (keep reading to learn more)
 
 ## Requirements
 
@@ -60,16 +60,25 @@ template:
 
 ```html
 
-<!-- default example which will render an img element -->
-<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" animation_duration="700" />
+<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" />
 
-<!-- but you can nest any component or HTML element -->
-<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" animation_duration="700">
+```
+
+nesting an HTML element instead of the default img:
+
+```html
+
+<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg">
   <span>Click me to see the image</span>
 </enlargeable-image>
 
-<!-- for example, maybe you need to nest a lazy-loaded img -->
-<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" animation_duration="700">
+```
+
+nesting another component instead of the default img (and setting the animation duration):
+
+```html
+
+<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" animation_duration="2000">
   <v-lazy-image src="/path/to/thumbnail.jpg" />
 </enlargeable-image>
 
@@ -79,9 +88,9 @@ template:
 
 | Property           | Type        | Default           | Required | Description                              |
 | ------------------ | ----------- | ----------------- | -------- | ---------------------------------------- |
-| src                | String      | N/A               | *yes*    | Relative path or absolute URL to the thumbnail image                       |
-| src_large          | String      | N/A               | *yes*    | Relative path or absolute URL to the full size image                       |
-| animation_duration | String      | 700               | *no*     | How many milliseconds that the enlarging and delarging animation will take |
+| src                | String      | N/A               | *yes*    | Relative path or absolute URL to the thumbnail image                                            |
+| src_large          | String      | N/A               | *yes*    | Relative path or absolute URL to the full size image                                            |
+| animation_duration | String      | 700               | *no*     | How many milliseconds that the enlarging and delarging animation will take (0 for no animation) |
 
 
 ## Events
@@ -137,6 +146,17 @@ template:
   width:100%;
   height:100%;
   background-color:transparent;
+  cursor:zoom-out;
+}
+.enlargeable-image .enlargeable-image-full.delarging {
+  display:flex;
+  position:fixed;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  background-color:transparent;
+  cursor:zoom-in;
 }
 .enlargeable-image .enlargeable-image-full.enlarged {
   display:flex;

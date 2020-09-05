@@ -16,6 +16,7 @@ export default {
   data() {
     return {
       enlarging: this.enlarging,
+      delarging: this.delarging,
       enlarged: this.enlarged,
       styles: this.styles
     };
@@ -26,6 +27,7 @@ export default {
       self.updating = false;
       self.enlarging = false;
       self.enlarged = false;
+      self.delarging = false;
       var transition_seconds = parseInt(self.$props.animation_duration) / 1000;
       transition_seconds = transition_seconds.toFixed(2);
       self.transition_value = "width "+transition_seconds+"s, height "+transition_seconds+"s, top "+transition_seconds+"s, left "+transition_seconds+"s, background-color "+transition_seconds+"s";
@@ -35,44 +37,43 @@ export default {
     },
     enlarge() {
       var self = this;
-      if(!self.updating) {
-        self.updating = true;
-        var img = self.$refs.img;
-        var rect = img.getBoundingClientRect();
+      var img = self.$refs.img;
+      var rect = img.getBoundingClientRect();
+      self.styles = {
+        position: "fixed",
+        left: Math.ceil(rect.left)+"px",
+        top: Math.floor(rect.top)+"px",
+        width: Math.floor(rect.right - rect.left)+"px",
+        height: Math.floor(rect.bottom - rect.top)+"px",
+        backgroundImage: "url("+self.$props.src+")",
+        transition: self.transition_value
+      };
+      self.enlarging = true;
+      self.delarging = false;
+      setTimeout(function() {
+        self.$emit('enlarging');
         self.styles = {
-          position: "fixed",
-          left: Math.ceil(rect.left)+"px",
-          top: Math.floor(rect.top)+"px",
-          width: Math.floor(rect.right - rect.left)+"px",
-          height: Math.floor(rect.bottom - rect.top)+"px",
           backgroundImage: "url("+self.$props.src+")",
           transition: self.transition_value
         };
-        self.enlarging = true;
-        setTimeout(function() {
-          self.$emit('enlarging');
-          self.styles = {
-            backgroundImage: "url("+self.$props.src+")",
-            transition: self.transition_value
-          };
-          setTimeout(function() {
-            self.enlarged = true;
-            self.updating = false;
-            self.$emit('enlarged');
-          }, self.$props.animation_duration);
-        }, 100);
-      }
+        if(typeof(self.timer) != 'undefined') {
+          clearTimeout(self.timer);
+        }
+        self.timer = setTimeout(function() {
+          self.enlarged = true;
+          self.updating = false;
+          self.$emit('enlarged');
+        }, self.$props.animation_duration);
+      }, 100);
     },
     reset() {
       var self = this;
-      if(!self.updating) {
-        self.updating = true;
+      if(!self.delarging) {
         var img = self.$refs.img;
         var rect = img.getBoundingClientRect();
-        self.enlarging = true;
         setTimeout(function() {
+          self.delarging = true;
           self.$emit('delarging');
-          self.enlarged = false;
           self.styles = {
             backgroundImage: "url("+self.$props.src+")",
             position: "fixed",
@@ -82,13 +83,19 @@ export default {
             height: Math.floor(rect.bottom - rect.top)+"px",
             transition: self.transition_value
           };
-          setTimeout(function() {
+          if(typeof(self.timer) != 'undefined') {
+            clearTimeout(self.timer);
+          }
+          self.timer = setTimeout(function() {
             self.enlarged = false;
             self.enlarging = false;
+            self.delarging = false;
             self.updating = false;
             self.$emit('delarged');
           }, self.$props.animation_duration);
         }, 0);
+      } else {
+        self.enlarge();
       }
     }
   },
@@ -106,7 +113,7 @@ export default {
         <img :src="this.$props.src" />
       </slot>
     </div>
-    <div @click="reset" class="enlargeable-image-full" v-bind:style="styles" v-bind:class="{ enlarging: enlarging, enlarged: enlarged }">
+    <div @click="reset" class="enlargeable-image-full" v-bind:style="styles" v-bind:class="{ delarging: delarging, enlarging: enlarging, enlarged: enlarged }">
       <img v-if="!enlarged" :src="this.$props.src" />
       <img v-if="enlarged" :src="this.$props.src_large" />
     </div>
@@ -153,6 +160,17 @@ export default {
   width:100%;
   height:100%;
   background-color:transparent;
+  cursor:zoom-out;
+}
+.enlargeable-image .enlargeable-image-full.delarging {
+  display:flex;
+  position:fixed;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  background-color:transparent;
+  cursor:zoom-in;
 }
 .enlargeable-image .enlargeable-image-full.enlarged {
   display:flex;
