@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@diracleo/vue-enlargeable-image",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/vue-enlargeable-image.ssr.js",
   "browser": "dist/vue-enlargeable-image.esm.js",
   "module": "dist/vue-enlargeable-image.esm.js",
