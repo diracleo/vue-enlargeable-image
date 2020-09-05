@@ -1,9 +1,17 @@
 # vue-enlargeable-image
 
-A Vue component that acts as a wrapper around any other component to allow that component to be the clicked to show a fullscreen image using a smooth animation.
+A Vue component that, when clicked, will enlarge an image from thumbnail to full version using a smooth animation.
 
 ![](demo.gif)
 
+## Features
+
+  * Specify both a thumbnail source and a full version source
+  * Thumbnail version will load immediately behind the scenes
+  * Full version will load upon enlargement and transformed seamlessly from the thumbnail version
+  * Specify the duration of the animation
+  * Nest any component or HTML element within - doesn't have to be just an img element (keep reading to learn more)
+  * The out-of-box aesthetic is pretty good, but you have the ability to style the componenet however you want with your own CSS class definitions (keep reading to learn more)
 
 ## Requirements
 
@@ -52,14 +60,17 @@ template:
 
 ```html
 
-<!-- typical example using an img element -->
-<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" animation_duration="700">
-  <img src="/path/to/thumbnail.jpg" />
-</enlargeable-image>
+<!-- default example which will render an img element -->
+<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" animation_duration="700" />
 
-<!-- but you can use any component or HTML element you want -->
+<!-- but you can nest any component or HTML element -->
 <enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" animation_duration="700">
   <span>Click me to see the image</span>
+</enlargeable-image>
+
+<!-- for example, maybe you need to nest a lazy-loaded img -->
+<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" animation_duration="700">
+  <v-lazy-image src="/path/to/thumbnail.jpg" />
 </enlargeable-image>
 
 ```
@@ -78,7 +89,7 @@ template:
 | Name          | Arguments                                | Description                               |
 | ------------- | ---------------------------------------- | ----------------------------------------- |
 | **enlarging** | None                                     | Fired when image starts to get bigger     |
-| **enlarged**  | None                                     | Fired when image has been enlarged        |
+| **enlarged**  | None                                     | Fired when image has reached full size    |
 | **delarging** | None                                     | Fired when image starts to get smaller    | 
 | **delarged**  | None                                     | Fired when image is back to original size |
 
@@ -90,12 +101,15 @@ template:
 .enlargeable-image .enlargeable-image-slot {
   display:inline-block;
 }
-.enlargeable-image > div:first-child {
+.enlargeable-image .enlargeable-image-slot > img {
+  max-width:100%;
+}
+.enlargeable-image > .enlargeable-image-slot {
   max-width:100%;
   max-height:100%;
   cursor:zoom-in;
 }
-.enlargeable-image > div:first-child.active {
+.enlargeable-image > .enlargeable-image-slot.active {
   opacity:0.3;
   filter:grayscale(100%);
 }

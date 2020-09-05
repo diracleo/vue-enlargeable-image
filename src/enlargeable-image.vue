@@ -102,7 +102,9 @@ export default {
 <template>
   <div class="enlargeable-image">
     <div v-bind:class="{ 'enlargeable-image-slot': true, active: enlarging }" ref="img" @click="enlarge">
-      <slot />
+      <slot>
+        <img :src="this.$props.src" />
+      </slot>
     </div>
     <div @click="reset" class="enlargeable-image-full" v-bind:style="styles" v-bind:class="{ enlarging: enlarging, enlarged: enlarged }">
       <img v-if="!enlarged" :src="this.$props.src" />
@@ -115,12 +117,15 @@ export default {
 .enlargeable-image .enlargeable-image-slot {
   display:inline-block;
 }
-.enlargeable-image > div:first-child {
+.enlargeable-image .enlargeable-image-slot > img {
+  max-width:100%;
+}
+.enlargeable-image > .enlargeable-image-slot {
   max-width:100%;
   max-height:100%;
   cursor:zoom-in;
 }
-.enlargeable-image > div:first-child.active {
+.enlargeable-image > .enlargeable-image-slot.active {
   opacity:0.3;
   filter:grayscale(100%);
 }
