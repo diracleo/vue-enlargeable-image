@@ -53,7 +53,7 @@
   "homepage": "https://github.com/diracleo/vue-enlargeable-image#readme",
   "description": "A Vue component that, when clicked, will enlarge an image from thumbnail to full version using a smooth animation.",
   "keywords": [
-    "vue"
+    "vue",
     "vue-enlargeable-image",
     "img",
     "image",
