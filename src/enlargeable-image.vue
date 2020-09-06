@@ -28,7 +28,11 @@ export default {
       self.enlarging = false;
       self.enlarged = false;
       self.delarging = false;
+      self.delay = 100;
       var transition_seconds = parseInt(self.$props.animation_duration) / 1000;
+      if(transition_seconds == 0) {
+        self.delay = 0;
+      }
       transition_seconds = transition_seconds.toFixed(2);
       self.transition_value = "width "+transition_seconds+"s, height "+transition_seconds+"s, top "+transition_seconds+"s, left "+transition_seconds+"s, background-color "+transition_seconds+"s";
       self.styles = {
@@ -64,7 +68,7 @@ export default {
           self.updating = false;
           self.$emit('enlarged');
         }, self.$props.animation_duration);
-      }, 100);
+      }, self.delay);
     },
     reset() {
       var self = this;

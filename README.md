@@ -13,6 +13,8 @@ A Vue component that, when clicked, will enlarge an image from thumbnail to full
   * Nest any component or HTML element within - doesn't have to be just an img element (keep reading to learn more)
   * Style the component however you want with your own CSS class definitions (keep reading to learn more)
 
+![](demo2.gif)
+
 ## Requirements
 
 - [Vue.js](https://github.com/vuejs/vue)

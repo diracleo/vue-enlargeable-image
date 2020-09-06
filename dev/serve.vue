@@ -32,10 +32,10 @@ export default Vue.extend({
         </div>
       </div>
       <h2>Text Links</h2>
-      <div class="portfolio">
+      <div class="portfolio-text">
         <div>
           <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo1_large.jpg">
-            <span>Mouse</span>
+            <span class="button">Mouse</span>
           </enlargeable-image>
         </div>
         <div>
@@ -45,7 +45,7 @@ export default Vue.extend({
         </div>
         <div>
           <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg">
-            <span>Upside-Down</span>
+            <h1>Upside-Down</h1>
           </enlargeable-image>
         </div>
         <div>
@@ -82,5 +82,25 @@ export default Vue.extend({
 }
 .test-container .portfolio > div .enlargeable-image-slot > img {
   max-width:100%;
+}
+.test-container .portfolio-text {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.test-container .portfolio-text > div {
+  margin:60px;
+}
+.test-container .portfolio-text span.button {
+  display:inline-block;
+  background-color:#333;
+  color:#fff;
+  border-radius:20px;
+  height:60px;
+  line-height:60px;
+  padding-left:20px;
+  padding-right:20px;
+  text-align:center;
 }
 </style>
