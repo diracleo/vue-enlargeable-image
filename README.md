@@ -12,6 +12,7 @@ A Vue component that, when clicked, will enlarge an image from thumbnail to full
   * Specify the duration of the animation
   * Nest any component or HTML element within - doesn't have to be just an img element (keep reading to learn more)
   * Style the component however you want with your own CSS class definitions (keep reading to learn more)
+  * Choose whether the enlargement is triggered by click or hover
 
 ![](demo2.gif)
 
@@ -66,7 +67,15 @@ template:
 
 ```
 
-nesting an HTML element instead of the default img:
+specifying that the enlargement occurs as a result of hover instead of click
+
+```html
+
+<enlargeable-image src="/path/to/thumbnail.jpg" src_large="/path/to/fullsize.jpg" trigger="hover" />
+
+```
+
+nesting a custom HTML element instead of the default img:
 
 ```html
 
@@ -88,11 +97,12 @@ nesting another component instead of the default img (and setting the animation 
 
 ## Properties
 
-| Property           | Type        | Default           | Required | Description                              |
-| ------------------ | ----------- | ----------------- | -------- | ---------------------------------------- |
-| src                | String      | N/A               | *yes*    | Relative path or absolute URL to the thumbnail image                                            |
-| src_large          | String      | N/A               | *yes*    | Relative path or absolute URL to the full size image                                            |
-| animation_duration | String      | 700               | *no*     | How many milliseconds that the enlarging and delarging animation will take (0 for no animation) |
+| Property           | Type                        | Default           | Required | Description                              |
+| ------------------ | --------------------------- | ----------------- | -------- | ---------------------------------------- |
+| src                | String                      | N/A               | *yes*    | Relative path or absolute URL to the thumbnail image                                            |
+| src_large          | String                      | N/A               | *yes*    | Relative path or absolute URL to the full size image                                            |
+| animation_duration | Integer                     | 700               | *no*     | How many milliseconds that the enlarging and delarging animation will take (0 for no animation) |
+| trigger            | String ("click" or "hover") | click             | *no*     | Type of user interaction that triggers the enlargement (currently "click" or "hover")           |
 
 
 ## Events
@@ -109,22 +119,25 @@ nesting another component instead of the default img (and setting the animation 
 
 ```CSS
 
-.enlargeable-image .enlargeable-image-slot {
+/* your passed-in element */
+.enlargeable-image > .slot {
   display:inline-block;
-}
-.enlargeable-image .enlargeable-image-slot > img {
-  max-width:100%;
-}
-.enlargeable-image > .enlargeable-image-slot {
   max-width:100%;
   max-height:100%;
   cursor:zoom-in;
 }
-.enlargeable-image > .enlargeable-image-slot.active {
+/* default img if no element passed in */
+.enlargeable-image > .slot > img.default {
+  max-width:100%;
+  vertical-align:middle;
+}
+/* passed-in element when growth is happening */
+.enlargeable-image.active > .slot {
   opacity:0.3;
   filter:grayscale(100%);
 }
-.enlargeable-image .enlargeable-image-full {
+/* full version that grows (background image allows seamless transition from thumbnail to full) */
+.enlargeable-image .full {
   cursor:zoom-out;
   background-color:transparent;
   align-items:center;
@@ -132,15 +145,15 @@ nesting another component instead of the default img (and setting the animation 
   background-position: center center;
   background-repeat:no-repeat;
   background-size:contain;
-  z-index:2000;
   display:none;
 }
-.enlargeable-image .enlargeable-image-full > img {
+.enlargeable-image .full > img {
   object-fit:contain;
   width:100%;
   height:100%;
 }
-.enlargeable-image .enlargeable-image-full.enlarging {
+/* full version while getting bigger */
+.enlargeable-image .full.enlarging {
   display:flex;
   position:fixed;
   left:0px;
@@ -149,8 +162,22 @@ nesting another component instead of the default img (and setting the animation 
   height:100%;
   background-color:transparent;
   cursor:zoom-out;
+  z-index:3;
 }
-.enlargeable-image .enlargeable-image-full.delarging {
+/* full version while at its peak size */
+.enlargeable-image .full.enlarged {
+  display:flex;
+  position:fixed;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  background-color:transparent;
+  cursor:zoom-out;
+  z-index:2;
+}
+/* full version while getting smaller */
+.enlargeable-image .full.delarging {
   display:flex;
   position:fixed;
   left:0px;
@@ -159,9 +186,7 @@ nesting another component instead of the default img (and setting the animation 
   height:100%;
   background-color:transparent;
   cursor:zoom-in;
-}
-.enlargeable-image .enlargeable-image-full.enlarged {
-  display:flex;
+  z-index:1;
 }
 
 ```

@@ -59,6 +59,324 @@ export default Vue.extend({
           </enlargeable-image>
         </div>
       </div>
+      <h2>Photo Portfolio</h2>
+      <div class="portfolio-hover">
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo2_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo3_large.jpg" trigger="hover" />
+        </div>
+        <div>
+          <enlargeable-image src="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_small.jpg" src_large="https://dane-iracleous-portfolio.s3-us-west-2.amazonaws.com/stock/demo5_large.jpg" trigger="hover" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -80,9 +398,6 @@ export default Vue.extend({
   max-width:200px;
   margin:30px;
 }
-.test-container .portfolio > div .enlargeable-image-slot > img {
-  max-width:100%;
-}
 .test-container .portfolio-text {
   display:flex;
   justify-content:center;
@@ -102,5 +417,16 @@ export default Vue.extend({
   padding-left:20px;
   padding-right:20px;
   text-align:center;
+}
+.test-container .portfolio-hover {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-bottom:400px;
+}
+.test-container .portfolio-hover > div {
+  max-width:30px;
+  margin:0px;
 }
 </style>
